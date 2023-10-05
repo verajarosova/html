@@ -3,113 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <style>
-        #game {
-            margin: auto;
-
-            width: 1000px;
-            height: 1000px;
-        }
-
-        #board {
-            position: absolute;
-
-            width: 1000px;
-            height: 1000px;
-            border: 1px solid black;
-        }
-
-        #top-border {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-
-            width: 1000px;
-            height: 100px;
-            background-color: hotpink;
-        }
-
-        #left-border {
-            position: absolute;
-            top: 100px;
-            left: 0px;
-
-            width: 100px;
-            height: 900px;
-            background-color: greenyellow;
-        }
-
-        #game-board {
-            position: absolute;
-            top: 100px;
-            left: 100px;
-
-            width: 800px;
-            height: 800px;
-            background-color: darkgray;
-        }
-
-        #right-border {
-            position: absolute;
-            top: 100px;
-            left: 900px;
-
-            width: 100px;
-            height: 900px;
-            background-color: orange;
-        }
-
-        #bottom-border {
-            position: absolute;
-            top: 900px;
-            left: 100px;
-
-            width: 800px;
-            height: 100px;
-            background-color: yellow;
-        }
-
-        .tile {
-            width: 100px;
-            height: 100px;
-            background-color: red;
-
-            float: left;
-        }
-
-        .tile.black {
-            background-color: black;
-        }
-
-        .tile.white {
-            background-color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="chess.css">
 </head>
 <body>
     <div id="game">
         <div id="board">
             <div id="top-border"></div>
             <div id="left-border">
-                <div class="tile">8</div>
-                <div class="tile">7</div>
-                <div class="tile">6</div>
-                <div class="tile">5</div>
-                <div class="tile">4</div>
-                <div class="tile">3</div>
-                <div class="tile">2</div>
-                <div class="tile">1</div>
+                <div class="tile"><span class="label">8</span></div>
+                <div class="tile"><span class="label">7</span></div>
+                <div class="tile"><span class="label">6</span></div>
+                <div class="tile"><span class="label">5</span></div>
+                <div class="tile"><span class="label">4</span></div>
+                <div class="tile"><span class="label">3</span></div>
+                <div class="tile"><span class="label">2</span></div>
+                <div class="tile"><span class="label">1</span></div>
             </div>
             <div id="right-border"></div>
             <div id="bottom-border">
-                <div class="tile">A</div>
-                <div class="tile">B</div>
-                <div class="tile">C</div>
-                <div class="tile">D</div>
-                <div class="tile">E</div>
-                <div class="tile">F</div>
-                <div class="tile">G</div>
-                <div class="tile">H</div>
+                <div class="tile"><span class="label">A</span></div>
+                <div class="tile"><span class="label">B</span></div>
+                <div class="tile"><span class="label">C</span></div>
+                <div class="tile"><span class="label">D</span></div>
+                <div class="tile"><span class="label">E</span></div>
+                <div class="tile"><span class="label">F</span></div>
+                <div class="tile"><span class="label">G</span></div>
+                <div class="tile"><span class="label">H</span></div>
             </div>
             <div id="game-board">
                 <div class="row row-8">

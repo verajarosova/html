@@ -1,0 +1,153 @@
+body {
+    background-image: url("images/body_background.jpg");
+    background-repeat: repeat;
+}
+
+#game {
+    margin: auto;
+
+    width: 1000px;
+    height: 1000px;
+}
+
+#board {
+    position: absolute;
+
+    width: 1010px;
+    height: 1010px;
+    background-image: url("images/black_marble2.png");
+
+}
+
+#top-border {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    width: 1010px;
+    height: 100px;
+}
+
+#left-border {
+    position: absolute;
+    top: 100px;
+    left: 0px;
+
+    width: 100px;
+    height: 905px;
+
+    padding-top: 5px;
+}
+
+#game-board {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+
+    width: 800px;
+    height: 800px;
+    background-color: darkgray;
+    border: 5px solid darkgoldenrod;
+}
+
+#right-border {
+    position: absolute;
+    top: 100px;
+    left: 910px;
+
+    width: 100px;
+    height: 910px;
+}
+
+#bottom-border {
+    position: absolute;
+    top: 910px;
+    left: 100px;
+
+    width: 800px;
+    height: 100px;
+}
+
+.tile {
+    width: 100px;
+    height: 100px;
+
+    float: left;
+
+    text-align: center;
+
+}
+
+.tile.black {
+    background-color: black;
+    background-image: url("images/black_marble.jpg");
+}
+
+.tile.white {
+    background-color: white;
+    background-image: url("images/white_marble.jpg");
+}
+
+.row-7 > .tile {
+    background-position-y: 100px;
+}
+
+.row-6 > .tile {
+    background-position-y: 200px;
+}
+
+.row-5 > .tile {
+    background-position-y: 300px;
+}
+
+.row-4 > .tile {
+    background-position-y: 400px;
+}
+
+.row-3 > .tile {
+    background-position-y: 500px;
+}
+
+.row-2 > .tile {
+    background-position-y: 600px;
+}
+
+.row-1 > .tile {
+    background-position-y: 700px;
+}
+
+.column-b {
+    background-position-x: 100px;
+}
+
+.column-c {
+    background-position-x: 200px;
+}
+
+.column-d {
+    background-position-x: 300px;
+}
+
+.column-e {
+    background-position-x: 400px;
+}
+
+.column-f {
+    background-position-x: 500px;
+}
+
+.column-g {
+    background-position-x: 600px;
+}
+
+.column-h {
+    background-position-x: 700px;
+}
+
+.label {
+    font-family: Arial, serif;
+    color: goldenrod;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 100px;
+}
