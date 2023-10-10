@@ -3,11 +3,32 @@ body {
     background-repeat: repeat;
 }
 
+#head {
+    margin: auto;
+    width: 1010px;
+    height: 130px;
+}
+
+#logo {
+    height: 100px;
+    display: inline-block;
+    position: relative;
+    top: 15px;
+}
+
+#logo-text {
+    margin-top: 10px;
+    line-height: 120px;
+    font-size: 100px;
+    font-family: "Brush Script MT", serif;
+    color: white;
+}
+
 #game {
     margin: auto;
-
-    width: 1000px;
-    height: 1000px;
+    width: 1010px;
+    height: 1010px;
+    box-shadow: 2px 2px 4px 10px #000000;
 }
 
 #board {
@@ -16,7 +37,6 @@ body {
     width: 1010px;
     height: 1010px;
     background-image: url("images/black_marble2.png");
-
 }
 
 #top-border {
@@ -75,7 +95,6 @@ body {
     float: left;
 
     text-align: center;
-
 }
 
 .tile.black {
@@ -150,4 +169,35 @@ body {
     font-size: 18px;
     font-weight: bold;
     line-height: 100px;
+}
+
+.piece {
+    width: 100px;
+    height: 100px;
+    background-image: url("images/chess_sprite.png");
+    background-size: 600px 200px;
+}
+
+.piece.black {
+    background-position-y: -100px;
+}
+
+.piece.queen {
+    background-position-x: -100px;
+}
+
+.piece.bishop {
+    background-position-x: -200px;
+}
+
+.piece.knight {
+    background-position-x: -300px;
+}
+
+.piece.rook {
+    background-position-x: -400px;
+}
+
+.piece.pawn {
+    background-position-x: -500px;
 }
